@@ -4,9 +4,11 @@
 body {
   margin: 0;
 }
+
 .wrapper {
   /* background: lightblue; */
   display: grid;
+
   gap: 5px;
   grid-template-columns: 1fr 2fr 3fr;
   grid-template-areas:
@@ -26,23 +28,65 @@ body {
 
   padding: 1rem;
 }
-h1 {
+.info {
   background: blue;
   grid-area: h1;
+  display: flex;
+  justify-content: space-around;
+}
+/* .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40rem;
+} */
+.button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.3rem;
 }
 header {
   background: red;
   grid-area: header;
 }
+header ul {
+  display: flex;
+  gap: 2rem;
+}
+header ul li:hover {
+  background: black;
+}
+header ul li {
+  margin-left: 1rem;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
 .banner {
-  background: linear-gradient(130deg, rgb(206, 77, 77), blue);
+  color: white;
+  background-color: green;
+  min-height: 70vh;
   grid-area: banner;
-  min-height: 20vh;
+}
+
+.banner .bann-content {
+  font-weight: bold;
+  font-size: 9px solid;
+  background: rgba(128, 128, 128, 0.402);
 }
 .off1 {
   background: yellow;
   grid-area: off1;
 }
+
+.descrip {
+  width: auto;
+  background-color: black;
+  color: white;
+}
+
 .off2 {
   background: brown;
   grid-area: off2;
